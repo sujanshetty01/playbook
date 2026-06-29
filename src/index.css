@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Roboto", system-ui, sans-serif;
+  
+  --color-lumen-teal: #00363a;
+  --color-lumen-teal-light: #005f63;
+  --color-lumen-orange: #f47f20;
+  --color-lumen-cyan: #3bcfc6;
+  --color-lumen-peach: #ffb885;
+  --color-lumen-yellow: #ffe36d;
+  
+  --color-space-dark: #070913;
+  --color-space-card: rgba(20, 25, 45, 0.7);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@layer base {
+  body {
+    @apply bg-[#070913] text-white overflow-x-hidden antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-space-card backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
+  }
+  
+  .glass-glow {
+    @apply bg-space-card backdrop-blur-md border border-lumen-cyan/30 shadow-[0_0_20px_rgba(59,207,198,0.2)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+  
+  .bg-gradient-warm {
+    @apply bg-gradient-to-r from-lumen-yellow via-lumen-peach to-lumen-orange;
+  }
+  
+  .bg-gradient-cool {
+    @apply bg-gradient-to-r from-lumen-teal via-lumen-teal-light to-lumen-cyan;
+  }
+}
