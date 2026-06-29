@@ -1,16 +1,56 @@
-# React + Vite
+# iLearnLumen: Intern Explorer Challenge Playbook
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to the **iLearnLumen: Intern Explorer Challenge** landing page repository! This is a modern, dynamic, and fully responsive web application built to guide interns through their learning journey and missions at Lumen.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is built using modern web technologies to ensure high performance and a beautiful aesthetic:
+- **[React](https://reactjs.org/)** & **[Vite](https://vitejs.dev/)** - Core framework and blazing-fast build tool
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework for rapid UI development
+- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready animation library for React
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Comprehensive icon library
 
-## React Compiler
+## ⚙️ Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Before you begin, ensure you have the following installed on your machine:
+- **Node.js** (v18 or higher is recommended)
+- **npm** (Node Package Manager)
 
-## Expanding the Oxlint configuration
+## 🛠️ Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Follow these simple steps to get the project running on your local machine.
+
+1. **Clone the repository** (or download the source code):
+   ```bash
+   git clone <your-github-repo-url>
+   cd playbook
+   ```
+
+2. **Install the dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   *Once running, open your browser and navigate to the local URL provided in your terminal (usually `http://localhost:5173/`).*
+
+## 📦 Building for Production
+
+To create a production-ready build of the application, run:
+```bash
+npm run build
+```
+This will compile and optimize the application into the `dist` folder, ready to be deployed to any static hosting service.
+
+## 📁 Project Structure
+
+- `src/components/` - Contains all the reusable React components (Navbar, Hero, Timeline, ChallengeTasks, etc.)
+- `src/App.jsx` - The main application layout where all components are assembled.
+- `src/index.css` - Global CSS styles and Tailwind configurations.
+
+## 🤝 Contributing
+
+When adding new playbook content or missions, please ensure you update the respective components in the `src/components/` directory (such as `ChallengeTasks.jsx` or `LumenStory.jsx`) to keep the content organized.
