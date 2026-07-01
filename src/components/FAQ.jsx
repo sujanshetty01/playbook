@@ -4,20 +4,20 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const faqs = [
   {
-    q: "What is the Interns Impact Playbook?",
-    a: "It is the final and highest value task in the iLearnLumen series where you showcase your learnings, projects, and overall impact during your internship."
+    q: "What is the Intern's Impact Playbook?",
+    a: "It is the final, high-value milestone in the iLearnLumen series where you synthesize your learnings, project experiences, and overall impact within Lumen's digital ecosystem."
   },
   {
-    q: "How many points is this task worth?",
-    a: "This task is worth 20 points, making it the most significant task in the Intern Explorer Challenge."
+    q: "How does Lumen drive digital transformation?",
+    a: "Lumen focuses on edge computing, cloud connectivity, cybersecurity, and AI-ready infrastructure to deliver intelligent digital platforms that empower next-generation enterprises."
   },
   {
-    q: "When is the deadline for submission?",
-    a: "All playbooks must be submitted confidentially by 03-Jul-2026, 6:00 PM."
+    q: "What is the strategic role of the STEPN Engine?",
+    a: "The STEPN Engine acts as a catalyst for end-to-end transformation, bridging strategy with execution to drive operational excellence and continuous innovation across teams."
   },
   {
-    q: "What format should the Playbook be in?",
-    a: "You can use presentations, documents, or digital portfolios. Focus on clarity, visual appeal, and strong storytelling."
+    q: "How do Lumen's Core Behaviours shape our workplace culture?",
+    a: "Our culture is rooted in continuous learning, collaboration, and customer obsession. These behaviours empower us to solve complex challenges and maintain a 'Good Fibes Only' inclusive environment."
   }
 ];
 

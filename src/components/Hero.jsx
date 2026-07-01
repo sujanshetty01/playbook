@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaMedal } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -30,18 +31,27 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
             <span className="text-lumen-peach font-medium">You've explored. You've discovered. You've learned.</span><br />
-            Now, it's time to bring it all together. This is your chance to showcase everything you have experienced through the iLearnLumen series.
+            Now, step into the final phase of your journey. The Impact Playbook is your canvas to synthesize your learnings, highlight your unique contributions, and leave a lasting mark on the Lumen ecosystem.
           </p>
           
-          <motion.div 
-            className="pt-8"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <a href="#challenge" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-space-dark font-bold text-lg hover:bg-gray-100 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-              Begin Your Journey
+          <p className="text-lg text-gray-400 italic max-w-xl mx-auto pt-4">
+            Reflect deeply. Build thoughtfully. Let your story resonate.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <a href="#tasks" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-space-dark font-bold text-lg hover:bg-gray-100 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                Begin Your Journey
+              </a>
+            </motion.div>
+            
+            <a href="#playbook-answers" className="inline-flex items-center justify-center px-8 py-4 rounded-full border border-lumen-cyan/50 text-lumen-cyan font-bold text-lg hover:bg-lumen-cyan/10 transition-colors">
+              View Playbook Answers
             </a>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

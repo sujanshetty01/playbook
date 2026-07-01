@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaShoePrints, FaUserNinja, FaHistory, FaSearch, FaCity, FaTags, FaMicrophoneAlt, FaInfinity, FaMapSigns, FaSitemap, FaUsers, FaRegNewspaper, FaProjectDiagram, FaHandshake, FaCalendarAlt, FaPodcast, FaRocket } from 'react-icons/fa';
+import { FaShoePrints, FaUserNinja, FaHistory, FaSearch, FaCity, FaTags, FaMicrophoneAlt, FaInfinity, FaMapSigns, FaSitemap, FaUsers, FaLightbulb, FaProjectDiagram, FaHandshake, FaCalendarAlt, FaPodcast, FaRocket } from 'react-icons/fa';
 
 const challengeTasks = [
   {
@@ -70,7 +70,9 @@ const challengeTasks = [
       { label: "Pro Tip", text: "Stitch it together - what Lumen offers, what Lumen delivers and the impact we create." }
     ],
     points: 3,
-    color: "from-blue-800 to-cyan-900"
+    color: "from-blue-800 to-cyan-900",
+    playbookSectionId: "lumen-city",
+    playbookText: "View Lumen City Playbook"
   },
   {
     id: 6,
@@ -81,7 +83,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Explore and map Lumen's brands to their purpose - who their clients are and what value they create." }
     ],
     points: 5,
-    color: "from-orange-500 to-red-600"
+    color: "from-orange-500 to-red-600",
+    playbookSectionId: "lumen-brands",
+    playbookText: "View Brand Portfolio"
   },
   {
     id: 7,
@@ -92,7 +96,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Pick a quote by our CEO, Kate Johnson and share with us - how it applies to you as an intern." }
     ],
     points: 5,
-    color: "from-teal-600 to-teal-800"
+    color: "from-teal-600 to-teal-800",
+    playbookSectionId: "lumen-culture",
+    playbookText: "View Culture & Mindset"
   },
   {
     id: 8,
@@ -103,7 +109,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Describe real workplace examples you have experienced in your role as an intern for the Lumen 8 Behaviours." }
     ],
     points: 5,
-    color: "from-orange-400 to-amber-500"
+    color: "from-orange-400 to-amber-500",
+    playbookSectionId: "lumen-behaviours",
+    playbookText: "View The Lumen Way"
   },
   {
     id: 9,
@@ -115,7 +123,9 @@ const challengeTasks = [
       { label: "Pro Tip", text: "The best learners don't wait for growth - they plan it." }
     ],
     points: 5,
-    color: "from-orange-300 to-orange-400"
+    color: "from-orange-300 to-orange-400",
+    playbookSectionId: "lumen-roadmap",
+    playbookText: "View AI Learning Roadmap"
   },
   {
     id: 10,
@@ -126,7 +136,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Create a story that explains the Global Leadership Hierarchy at Lumen. Not just the names or roles, tell the story of how leadership connects, flows, and drives Lumen." }
     ],
     points: 5,
-    color: "from-green-300 to-teal-400"
+    color: "from-green-300 to-teal-400",
+    playbookSectionId: "lumen-leadership",
+    playbookText: "View Leadership Ecosystem"
   },
   {
     id: 11,
@@ -137,7 +149,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Create a story that explains the India Leadership Hierarchy at Lumen. Tell the story of how leadership connects, flows, and drives Lumen." }
     ],
     points: 5,
-    color: "from-teal-300 to-emerald-500"
+    color: "from-teal-300 to-emerald-500",
+    playbookSectionId: "lumen-leadership",
+    playbookText: "View India Leadership"
   },
   {
     id: 12,
@@ -148,7 +162,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "From past to present, from old names to new ones, from strategy to execution and innovation. Think about the A to Z of the STEPN team and explain the journey." }
     ],
     points: 5,
-    color: "from-yellow-400 to-yellow-600"
+    color: "from-yellow-400 to-yellow-600",
+    playbookSectionId: "stepn-engine",
+    playbookText: "View STEPN Journey"
   },
   {
     id: 13,
@@ -159,7 +175,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "From past to present, from old names to new ones, from strategy to execution and innovation. Think about the A to Z of the Customer Advocacy team and explain the journey." }
     ],
     points: 5,
-    color: "from-yellow-500 to-orange-500"
+    color: "from-yellow-500 to-orange-500",
+    playbookSectionId: "customer-advocacy",
+    playbookText: "View Customer Advocacy"
   },
   {
     id: 14,
@@ -170,7 +188,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "From past to present, from old names to new ones, from strategy to execution and innovation. Think about the A to Z of the GCO team and explain the journey." }
     ],
     points: 5,
-    color: "from-orange-300 to-orange-500"
+    color: "from-orange-300 to-orange-500",
+    playbookSectionId: "gco-india",
+    playbookText: "View GCO Journey"
   },
   {
     id: 15,
@@ -181,29 +201,35 @@ const challengeTasks = [
       { label: "The Challenge", text: "Uncover all the collaboration platforms used across Lumen and explain how they enable teams to work together." }
     ],
     points: 3,
-    color: "from-teal-300 to-teal-500"
+    color: "from-teal-300 to-teal-500",
+    playbookSectionId: "collaboration-iceberg",
+    playbookText: "View Collaboration Iceberg"
   },
   {
     id: 16,
-    title: "News Tracker",
-    icon: FaRegNewspaper,
-    taskTitle: "Find the latest announcements and describe them.",
+    title: "Innovation & Continuous Improvement",
+    icon: FaLightbulb,
+    taskTitle: "Enhance processes and create efficient systems.",
     details: [
-      { label: "The Challenge", text: "Dive into Inside Lumen to find the latest announcements. Don't just list them, add the context, mention what the update is about, why it matters and what impact it creates." }
+      { label: "The Challenge", text: "Innovation and continuous improvement are essential for organizations to stay competitive and deliver value. Explore how Lumen embraces innovation." }
     ],
     points: 3,
-    color: "from-orange-400 to-orange-600"
+    color: "from-orange-400 to-orange-600",
+    playbookSectionId: "innovation-improvement",
+    playbookText: "View Innovation & Improvement"
   },
   {
     id: 17,
-    title: "Partnership Hunt",
-    icon: FaHandshake,
-    taskTitle: "Find the key partnerships Lumen is involved in.",
+    title: "Digital Transformation & Operational Excellence",
+    icon: FaProjectDiagram,
+    taskTitle: "Adopt modern technologies and tools.",
     details: [
-      { label: "The Challenge", text: "Growth is powered through strategic partnerships and collaborations that create real impact. Go on a hunt across Inside Lumen and find the key partnerships and explain about them through a story." }
+      { label: "The Challenge", text: "Digital transformation plays a critical role in modern organizations. Explain how it improves efficiency and enhances customer experience at Lumen." }
     ],
     points: 5,
-    color: "from-amber-300 to-yellow-500"
+    color: "from-amber-300 to-yellow-500",
+    playbookSectionId: "digital-transformation",
+    playbookText: "View Digital Transformation"
   },
   {
     id: 18,
@@ -214,7 +240,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Explore and discover the events hosted by Lumen, both internal and external. Tell us about the event and how they have created an impact." }
     ],
     points: 3,
-    color: "from-red-300 to-red-500"
+    color: "from-red-300 to-red-500",
+    playbookSectionId: "industry-presence",
+    playbookText: "View Industry Presence"
   },
   {
     id: 19,
@@ -225,7 +253,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Explore 'Good Fibes Only' on Inside Lumen and uncover what it's all about. Your submission should answer what it is, what it focuses on, and what impact it creates." }
     ],
     points: 3,
-    color: "from-orange-500 to-red-500"
+    color: "from-orange-500 to-red-500",
+    playbookSectionId: "good-fibes-only",
+    playbookText: "View Good Fibers Only"
   },
   {
     id: 20,
@@ -236,7 +266,9 @@ const challengeTasks = [
       { label: "The Challenge", text: "Explore Inside Lumen and uncover the transformation theme. Tell us what you understand about where Lumen is headed." }
     ],
     points: 5,
-    color: "from-yellow-400 to-orange-500"
+    color: "from-yellow-400 to-orange-500",
+    playbookSectionId: "transformation-story",
+    playbookText: "View Transformation Story"
   }
 ];
 

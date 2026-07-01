@@ -3,15 +3,22 @@
 @theme {
   --font-sans: "Inter", "Roboto", system-ui, sans-serif;
   
-  --color-lumen-teal: #00363a;
-  --color-lumen-teal-light: #005f63;
-  --color-lumen-orange: #f47f20;
-  --color-lumen-cyan: #3bcfc6;
-  --color-lumen-peach: #ffb885;
-  --color-lumen-yellow: #ffe36d;
+  /* Official Lumen Brand Colors */
+  --color-lumen-dark-teal: #0F3133;
+  --color-lumen-teal: #36C6C6;
+  --color-lumen-seafoam: #B2FFF6;
+  --color-lumen-orange: #F88429;
+  --color-lumen-red: #F95E4A;
+  --color-lumen-silver: #D0D4D9;
   
-  --color-space-dark: #070913;
-  --color-space-card: rgba(20, 25, 45, 0.7);
+  /* Legacy mappings for existing components */
+  --color-space-dark: #0F3133;
+  --color-lumen-cyan: #36C6C6;
+  --color-lumen-teal-light: #36C6C6;
+  --color-lumen-peach: #F88429;
+  --color-lumen-yellow: #FFE36D;
+  
+  --color-space-card: rgba(15, 49, 51, 0.7);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -25,7 +32,7 @@
 
 @layer base {
   body {
-    @apply bg-[#070913] text-white overflow-x-hidden antialiased;
+    @apply bg-space-dark text-white overflow-x-hidden antialiased;
   }
 }
 

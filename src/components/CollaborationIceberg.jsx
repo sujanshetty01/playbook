@@ -20,7 +20,7 @@ const hiddenElements = [
 
 const CollaborationIceberg = () => {
   return (
-    <section className="py-24 relative z-10 bg-gradient-to-b from-[#051125] to-[#01050f] overflow-hidden">
+    <section id="collaboration-iceberg" className="py-24 relative z-10 bg-gradient-to-b from-[#051125] to-[#01050f] overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         
         {/* Header */}

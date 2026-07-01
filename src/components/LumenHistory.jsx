@@ -21,7 +21,7 @@ const timelineEvents = [
   },
   {
     period: "2020",
-    title: "THE BORN OF LUMEN",
+    title: "THE BIRTH OF LUMEN",
     subtitle: "From networks to intelligent digital platforms.",
     points: ["Rebranding CenturyLink to Lumen Technologies", "To reflect a shift beyond telecom", "To focus on innovation, data, and digital transformation", "Key focus areas: Edge computing, Cloud connectivity, Cybersecurity, AI-ready infrastructure"],
     icon: FaRocket,
