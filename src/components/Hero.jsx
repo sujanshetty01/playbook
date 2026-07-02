@@ -30,7 +30,7 @@ const Hero = () => {
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
-            <span className="text-lumen-peach font-medium">You've explored. You've discovered. You've learned.</span><br />
+            <span className="text-lumen-peach font-medium">We've explored. We've discovered. We've learned.</span><br />
             Now, step into the final phase of your journey. The Impact Playbook is your canvas to synthesize your learnings, highlight your unique contributions, and leave a lasting mark on the Lumen ecosystem.
           </p>
           

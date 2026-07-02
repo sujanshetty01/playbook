@@ -70,7 +70,8 @@ const Timeline = () => {
     <section id="timeline" className="py-24 relative z-10 bg-space-dark/50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Your Content Journey</h2>
+          <h2 className="text-sm font-bold tracking-widest text-lumen-cyan uppercase mb-3">Task 2 Playbook: Navigation Ninja</h2>
+          <h3 className="text-4xl font-bold mb-4 text-white">Your Content Journey</h3>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Navigate. Discover. Grow. Your journey to smart, connected learning and engagement starts here.
           </p>

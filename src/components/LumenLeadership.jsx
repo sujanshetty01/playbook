@@ -42,7 +42,7 @@ const LumenLeadership = () => {
     <section id="lumen-leadership" className="py-24 relative z-10 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-bold tracking-widest text-lumen-teal uppercase mb-3">Task 10 Playbook: Global Leadership Map</h2>
+          <h2 className="text-sm font-bold tracking-widest text-lumen-teal uppercase mb-3">Task 10 & 11 Playbook: Global & India Leadership Map</h2>
           <h3 className="text-4xl md:text-5xl font-black text-[#00363a] mb-6">Lumen Leadership Ecosystem</h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             From Ideas to Impact. How ideas evolve into impactful solutions through a structured flow of leadership and teamwork.

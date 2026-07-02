@@ -20,7 +20,7 @@ const stepnPhases = [
   },
   {
     num: "3",
-    title: "CLOUD ERA",
+    title: "Cloud Era",
     subtitle: "Digital platforms",
     items: ["Cloud migration", "API-first architecture", "Automated provisioning", "Scalable and flexible operations"],
     color: "from-lime-500 to-green-500",
@@ -57,7 +57,8 @@ const StepnEngine = () => {
     <section id="stepn-engine" className="py-24 relative z-10 bg-white text-space-dark">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#00363a]">STEPN: The Engine Behind Lumen's AI Future</h2>
+          <h2 className="text-sm font-bold tracking-widest text-lumen-teal uppercase mb-3">Task 12 Playbook: Decoding Team Journeys - STEPN</h2>
+          <h3 className="text-4xl md:text-5xl font-extrabold mb-4 text-[#00363a]">STEPN: The Engine Behind Lumen's AI Future</h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto italic">
             From Network Infrastructure to Intelligent Digital Ecosystems
           </p>

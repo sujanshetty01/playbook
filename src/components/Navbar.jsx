@@ -25,7 +25,14 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-bold tracking-tight text-white">LUMEN</span>
+          <a href="#home" className="flex items-center gap-2">
+            <img 
+              src={`${import.meta.env.BASE_URL}lumen-logo.jpg`} 
+              alt="Lumen" 
+              className="h-8 w-auto object-contain rounded"
+            />
+            <span className="text-white font-bold text-xl tracking-wide ml-2">Lumen</span>
+          </a>
         </div>
         
         {/* Desktop Nav */}

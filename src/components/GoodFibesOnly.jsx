@@ -67,7 +67,8 @@ const GoodFibesOnly = () => {
             viewport={{ once: true }}
             className="lg:w-1/2 relative w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black/50 backdrop-blur-sm group cursor-pointer flex items-center justify-center"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-fuchsia-900/40 mix-blend-overlay"></div>
+            <img src={`${import.meta.env.BASE_URL}good-fibes.jpg`} alt="Good Fibes Only" className="absolute inset-0 w-full h-full object-cover z-0" />
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 to-fuchsia-900/40 mix-blend-overlay z-0"></div>
             <FaPlayCircle className="text-7xl text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300 relative z-10" />
             <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end z-10">
               <div>

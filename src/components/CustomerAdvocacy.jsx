@@ -45,7 +45,7 @@ const CustomerAdvocacy = () => {
             viewport={{ once: true }}
             className="inline-block px-6 py-2 rounded-full bg-rose-50 text-rose-600 font-bold tracking-widest uppercase text-sm mb-6"
           >
-            Putting Customers First
+            Task 13 Playbook: Decoding Team Journeys - Customer Advocacy
           </motion.div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
