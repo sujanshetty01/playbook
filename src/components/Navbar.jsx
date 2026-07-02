@@ -31,7 +31,6 @@ const Navbar = () => {
               alt="Lumen" 
               className="h-8 w-auto object-contain rounded"
             />
-            <span className="text-white font-bold text-xl tracking-wide ml-2">Lumen</span>
           </a>
         </div>
         

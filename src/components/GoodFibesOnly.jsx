@@ -47,7 +47,7 @@ const GoodFibesOnly = () => {
               <span>Internal Initiative</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              Good Fibers <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-purple-500">Only</span>
+              Good Fibes <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-purple-500">Only</span>
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
               A dynamic internal initiative that focuses on communication, innovation, and collaboration. It combines storytelling, leadership insights, and technology updates to connect employees and align everyone with Lumen’s vision of building the digital backbone for the AI-driven future.
