@@ -255,7 +255,7 @@ const challengeTasks = [
     points: 3,
     color: "from-orange-500 to-red-500",
     playbookSectionId: "good-fibes-only",
-    playbookText: "View Good Fibers Only"
+    playbookText: "View Good Fibes Only"
   },
   {
     id: 20,
